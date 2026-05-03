@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>UCMU Mobile Chat Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <aside id="sidebar">
+      <div class="side-title">Chats</div>
+      <div id="chatList"></div>
+    </aside>
+
+    <section id="chatView">
+      <header id="chatHeader">
+        <div>
+          <div class="chat-name">Prototype Chat</div>
+          <div class="chat-status">local test mode</div>
+        </div>
+      </header>
+
+      <div id="messages"></div>
+
+      <form id="composer">
+        <input id="messageInput" autocomplete="off" placeholder="Сообщение..." />
+        <button id="sendButton" type="submit">→</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
